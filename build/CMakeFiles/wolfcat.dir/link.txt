@@ -1,1 +1,0 @@
-/usr/bin/cc -g -Wl,--dependency-file=CMakeFiles/wolfcat.dir/link.d CMakeFiles/wolfcat.dir/src/main.c.o CMakeFiles/wolfcat.dir/src/client.c.o CMakeFiles/wolfcat.dir/src/server.c.o -o wolfcat  -lwolfssl
