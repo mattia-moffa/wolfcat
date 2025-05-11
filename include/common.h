@@ -2,7 +2,6 @@
 #define COMMON_H
 
 #include <netdb.h>
-#include <stdint.h>
 #include <wolfssl/options.h>
 #include <wolfssl/ssl.h>
 

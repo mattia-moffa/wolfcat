@@ -1,11 +1,3 @@
-#include <errno.h>
-#include <netdb.h>
-#include <stdint.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <sys/socket.h>
-#include <sys/wait.h>
-#include <unistd.h>
 #include <wolfssl/options.h>
 #include <wolfssl/ssl.h>
 

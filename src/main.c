@@ -1,25 +1,7 @@
-#include <limits.h>
-#include <netdb.h>
-#include <poll.h>
-#include <pthread.h>
-#include <stdatomic.h>
-#include <stdint.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <sys/poll.h>
-#include <sys/socket.h>
-#include <sys/wait.h>
-#include <unistd.h>
 #include <wolfssl/options.h>
 #include <wolfssl/ssl.h>
 
 #include "common.h"
-
-#define POLL_STDIN 0
-#define POLL_NETOUT 1
-#define POLL_NETIN 2
-#define POLL_STDOUT 3
 
 void wolfssl_perror(int err, const char *prefix) {
     char error_string[WOLFSSL_MAX_ERROR_SZ];
