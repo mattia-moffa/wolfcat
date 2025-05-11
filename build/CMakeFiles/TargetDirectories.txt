@@ -1,0 +1,3 @@
+/home/altermetax/dev/wolfcat/build/CMakeFiles/wolfcat.dir
+/home/altermetax/dev/wolfcat/build/CMakeFiles/edit_cache.dir
+/home/altermetax/dev/wolfcat/build/CMakeFiles/rebuild_cache.dir
