@@ -30,7 +30,7 @@ else()
         target_include_directories(wolfcat PRIVATE ${WOLFSSL_INCLUDE_DIR})
         target_link_libraries(wolfcat PRIVATE ${WOLFSSL_LIB})
     else()
-        message(STATUS "WolfSSL not found. Set WOLFSSL_ROOT or install it to a system path.")
+        message(FATAL_ERROR "WolfSSL not found. Set WOLFSSL_ROOT or install it to a system path.")
     endif()
 endif()
 
