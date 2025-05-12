@@ -13,6 +13,8 @@ cmake ..
 make
 ```
 
+If WolfSSL is installed in a non-standard path, you can specify it via `cmake .. -DWOLFSSL_ROOT=/path/to/wolfssl`.
+
 ## Installing
 
 ```
@@ -51,7 +53,7 @@ wolfcat -l localhost 5000 --ca-cert ca-cert.pem --cert cert.pem --key key.pem
 echo "Hello world!" | wolfcat localhost 5000 --ca-cert ca-cert.pem
 ```
 
-After this, the server will print `Hello, world!` to standard output and both peers will exit. It is also possible to instruct the server to listen for more clients instead with the `-k` option.
+After this, the server will print `Hello world!` to standard output and both peers will exit. It is also possible to instruct the server to listen for more clients instead with the `-k` option.
 
 The same effect can also be achieved in the opposite direction:
 
@@ -63,4 +65,4 @@ echo "Hello world!" | wolfcat -l localhost 5000 --ca-cert ca-cert.pem --cert cer
 wolfcat localhost 5000 --ca-cert ca-cert.pem
 ```
 
-In this second case, the client will immediately print `Hello, world!` to standard output and both peers will exit.
+In this second case, the client will immediately print `Hello world!` to standard output and both peers will exit.
